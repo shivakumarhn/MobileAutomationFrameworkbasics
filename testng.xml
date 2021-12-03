@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.citrix.listeners.ListenersClass"></listener>
+    </listeners>
+    <test thread-count="1" parallel="methods" name="/Users/shivakumarhn/IdeaProjects/MobileAutomationFramework">
+        <classes>
+            <class name="com.citrix.testcases.DigitalWSFeedbackTest">
+                <methods>
+                    <include name="workspaceFeedbackTest"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
